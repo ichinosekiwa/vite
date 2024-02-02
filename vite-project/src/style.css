@@ -2,21 +2,22 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   background-color: #fff;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 * {
   margin: 0;
   padding: 0;
 }
+
 li {
   list-style: none;
 }
+
 img {
   width: 100%;
   box-sizing: border-box;
@@ -27,52 +28,55 @@ img {
   height: auto;
   margin-bottom: 80px;
 }
+
 .content_01 {
   display: block;
   max-width: 800px;
   margin: 0 auto 80px;
-  h1 {
-    font-size: 40px;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 64px;
-  }
-  div {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 1.5rem;
-    img {
-      width: 150px;
-      height: 150px;
-      aspect-ratio: 1/1;
-    }
-    .txt_wrap {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-  }
 }
+.content_01 h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+.content_01 div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.content_01 div img {
+  width: 150px;
+  height: 150px;
+  aspect-ratio: 1/1;
+}
+.content_01 div .txt_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .content_02 {
   display: block;
   max-width: 800px;
   margin: 0 auto 80px;
-  h2 {
-    font-size: 40px;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 64px;
-  }
-  ul {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    li {
-      text-align: center;
-    }
-  }
 }
+.content_02 h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+.content_02 ul {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.content_02 ul li {
+  text-align: center;
+}
+
 footer {
   width: 100vw;
   height: auto;
@@ -81,4 +85,4 @@ footer {
   text-align: center;
   font-size: 14px;
   padding: 8px 0;
-}
+}/*# sourceMappingURL=style.css.map */
