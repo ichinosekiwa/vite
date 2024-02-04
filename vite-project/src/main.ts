@@ -1,24 +1,30 @@
-import './style.scss';
-// import typescriptLogo from './typescript.svg';
-// import viteLogo from '/vite.svg';
-// import { setupCounter } from './counter.ts';
+import './src/style.scss';
 
-// document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-//   <div>
-//     <a href="https://vitejs.dev" target="_blank">
-//       <img src="${viteLogo}" class="logo" alt="Vite logo" />
-//     </a>
-//     <a href="https://www.typescriptlang.org/" target="_blank">
-//       <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-//     </a>
-//     <h1>Vite + TypeScript</h1>
-//     <div class="card">
-//       <button id="counter" type="button"></button>
-//     </div>
-//     <p class="read-the-docs">
-//       Click on the Vite and TypeScript logos to learn more
-//     </p>
-//   </div>
-// `;
+const images = ['src/img/img_01.jpg', 'src/img/img_02.jpg', 'src/img/img_03.jpg'];
+const slideItems = document.querySelectorAll('.slide_items img');
+const prev = document.querySelector('.prev-btn');
+const next = document.querySelector('.next-btn');
+// カウンター
+let current = 0;
 
-// setupCounter(document.querySelector<HTMLButtonElement>('#counter')!);
+// 型を指定する
+const showImage = (index: number) => {
+  slideItems.forEach((item, i) => {
+    if (i === index) {
+      (item as HTMLElement).style.display = 'block';
+    } else {
+      (item as HTMLElement).style.display = 'none';
+    }
+  });
+};
+showImage(current);
+
+//ボタンクリック（?でエラー回避する
+prev?.addEventListener('click', () => {
+  current = (current - 1 + images.length) % images.length;
+  showImage(current);
+});
+next?.addEventListener('click', () => {
+  current = (current + 1) % images.length;
+  showImage(current);
+});

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="src/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite環境構築</title>
 </head>
@@ -27,18 +28,18 @@
   </section>
   <section class="content_02">
     <h2>Bicycle</h2>
-    <div class="slider-items">
-      <div class="slider">
-        <img src="src/img/img_01.jpg" alt="画像1">
-        <img src="src/img/img_02.jpg" alt="画像2">
-        <img src="src/img/img_03.jpg" alt="画像3">
+    <div class="slider">
+      <div class="slide_items">
+        <img id="item" src="src/img/img_01.jpg" alt="画像1">
+        <img id="item" src="src/img/img_02.jpg" alt="画像2">
+        <img id="item" src="src/img/img_03.jpg" alt="画像3">
       </div>
       <button class="prev-btn">←</button>
       <button class="next-btn">→</button>
     </div>
   </section>
 
-  <script type="module" src="/src/main.ts"></script>
+  <script type="module" src="/dist/assets/main.js"></script>
 </body>
 <footer>
   <p>2024 xxxx</p>
