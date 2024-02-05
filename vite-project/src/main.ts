@@ -1,5 +1,3 @@
-import './style.scss';
-
 const images = ['src/img/img_01.jpg', 'src/img/img_02.jpg', 'src/img/img_03.jpg'];
 const slideItems = document.querySelectorAll('.slide_items img');
 const prev = document.querySelector('.prev-btn');
